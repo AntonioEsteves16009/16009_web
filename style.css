@@ -1,0 +1,59 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* LOGO */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* NAVBAR */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00573F; /* verde escuro SNS */
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #008C5A; /* tom mais claro ao passar o rato */
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
